@@ -20,6 +20,10 @@
                 <label class="me-4 text-white fs-3" for="">Scrivi una frase:</label>
                 <input class="p-1" type="text-area" name="text">
             </div>
+            <div class="text-center">
+                <label class="me-4 text-white fs-3" for="">Scrivi una parolaccia:</label>
+                <input class="p-1" type="text" name="badword">
+            </div>
             <div class="text-center mt-5">
                 <input class="rounded-3 px-3 border-white text-white fs-3" type="submit" style="background-color: violet">
             </div>

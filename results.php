@@ -1,8 +1,13 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 $text = $_GET['text'];
+$badword = $_GET['badword'];
 
 if(empty($text)) {
-    $text = 'non hai scritto niente';
+    $text = 'Non hai scritto niente';
 }
 
 
@@ -23,7 +28,7 @@ if(empty($text)) {
 
         <h1 class="text-center my-5 display-2" style="color: violet">IL TESTO CHE HAI SCRITTO E':</h1>
 
-        <p class="text-center text-white fs-3"> <?php echo str_replace("cavolo", "******", $text) ?> </p>
+        <p class="text-center text-white fs-3"> <?php echo $text = str_replace($badword, '***', $text)?> </p>
         <div class="text-center text-white fs-5">Hai utilizzato <?php echo strlen($text) ?> caratteri</div>
     </div>
     
