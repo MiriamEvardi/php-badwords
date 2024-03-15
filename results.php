@@ -4,6 +4,8 @@ $text = $_GET['text'];
 if(empty($text)) {
     $text = 'non hai scritto niente';
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +24,7 @@ if(empty($text)) {
         <h1 class="text-center my-5 display-2" style="color: violet">IL TESTO CHE HAI SCRITTO E':</h1>
 
         <p class="text-center text-white fs-3"> <?php echo str_replace("cavolo", "******", $text) ?> </p>
-
+        <div class="text-center text-white fs-5">Hai utilizzato <?php echo strlen($text) ?> caratteri</div>
     </div>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
